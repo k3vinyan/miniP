@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css" href="output.css">
 </head>
 <body>
-    <script src="app.js"></script>
+    <div id="app">
+        
+    </div>
+
+    <div class="slide-container">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
+    </div>
+
+    <div class="slider-container-2">
+        <input type="range" min="1" max="10" value="5" class="slider-2" id="range-2">
+    </div>
+
+
+    <p id="">Value: <span id="volume-value"></span></p>
+
+    <div class="volume-slider-container">
+        <input type="range" min="0" max="10" value="0" class="volume-slider" id="volume-range">
+    </div>
+
+    <div>
+        <p></p>
+    </div>
+
+
+    <!-- <svg id="box">
+        <rect x="10" y="10" fill="blue"  stroke="black" width="100"  height="100"></rect>
+    </svg> -->
+    <br />
+    <svg xmlns="http://ww.w3.org/2000/svg" width="500" height="500" id="circle">
+        <circle stroke="black" cx="200"  cy="200" r="100" fill="yellow"></circle>
+        <path d="M 200 200 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"/>
+    </svg>
+
+
+    
+
     <script type="module" src="slider.js"></script>
 </body>
 </html>
